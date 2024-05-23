@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            tools:context=".MainActivity">
+
+            <EditText
+                android:id="@+id/biaya_layanan"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/biaya_layanan"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pertanyaan_layanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bagaimana_pelayanannya"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/biaya_layanan" />
+
+            <RadioGroup
+                android:id="@+id/tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/pilihan_dua_puluh_persen"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pertanyaan_layanan">
+
+                <RadioButton
+                    android:id="@+id/dua_puluh_persen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pelayanan_luar_biasa" />
+
+                <RadioButton
+                    android:id="@+id/delapan_belas_persen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pelayanan_baik" />
+
+                <RadioButton
+                    android:id="@+id/lima_belas_persen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pelayanan_biasa" />
+            </RadioGroup>
+
+            <Switch
+                android:id="@+id/pembulatan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/bulatkan_tip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/pilihan_tip"
+                app:layout_constraintTop_toBottomOf="@id/pilihan_tip" />
+
+            <Button
+                android:id="@+id/tombol_hitung"
+                android:layout_width="376dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/hitung"
+                android:background="#590de5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/saklar_pembulatan" />
+
+            <TextView
+                android:id="@+id/total_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tombol_hitung"
+                tools:text="Jumlah Tip: Rp10.000" />
+        </androidx.constraintlayout.widget.ConstraintLayout>

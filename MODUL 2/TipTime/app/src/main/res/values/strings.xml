@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kalkulator Tip</string>
+    <string name="biaya_layanan">Cost of Service</string>
+    <string name="bagaimana_pelayanannya">How was the service?</string>
+    <string name="pelayanan_luar_biasa">Pelayanan luar biasa (20%)</string>
+    <string name="pelayanan_baik">Pelayanan baik (18%)</string>
+    <string name="pelayanan_biasa">Pelayanan biasa (15%)</string>
+    <string name="bulatkan_tip">Round up  tip?</string>
+    <string name="hitung">Hitung</string>
+    <string name="jumlah_tip">Tip Amount: Rp%s</string>
+    <string name="jumlah_tip_default">Tip Amount </string>
+    <string name="invalid_input">Masukan tidak valid</string>
+</resources>
