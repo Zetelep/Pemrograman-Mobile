@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Unscramble</string>
+    <string name="instructions">Susun kembali huruf yang diacak menjadi kata.</string>
+    <string name="skip">Lewati</string>
+    <string name="submit">Submit</string>
+    <string name="score">Skor: %d</string>
+    <string name="word_count">%d dari %d kata</string>
+    <string name="enter_your_word">Masukan Kata</string>
+    <string name="congratulations">Selamat!</string>
+    <string name="you_scored">"Skor kamu: %d"</string>
+    <string name="exit">Keluar</string>
+    <string name="play_again">Main lagi</string>
+    <string name="try_again">Coba lagi!</string>
+</resources>
